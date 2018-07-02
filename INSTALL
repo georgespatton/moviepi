@@ -1,0 +1,23 @@
+moviepi, a way to display all your movies/videos randomly from a directory search on your Raspberry Pi.  
+
+Environment:
+
+I used a Raspberry Pi 3B+ with an 8GB SD card running the latest Raspbian and Python 3.
+
+Install:
+
+cd 
+
+git clone https://github.com/georgespatton/moviepi
+
+cd moviepi
+
+sudo cp rc.local /etc/rc.local
+
+sudo reboot
+
+This will install the wrapper to start once Rasbian starts.  Change the walk_dir parameter in gather_files.py to change the parent directory of where your video files live.  I only have .mp4 files, but you can add additional extensions in gather_files.py if you want to search for more file extensions. 
+
+Also see https://github.com/georgespatton/picturepi for another similar program I wrote for a picture display frame.
+
+
